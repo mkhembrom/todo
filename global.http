@@ -1,0 +1,25 @@
+GET http://localhost:8080/note
+
+###
+
+POST http://localhost:8080/note/add
+content-type: application/json
+
+{
+    "userId": "manjesh@gmail.com",
+    "title": "Coding",
+    "content": "Best in the worl;d"
+}
+
+###
+
+GET http://localhost:8080/note/manjesh@gmail.com
+
+###
+
+DELETE http://localhost:8080/note/delete
+content-type: application/json
+
+{
+    "id": "o2wiIJ0xRzmm9bypBvC5H" 
+}
